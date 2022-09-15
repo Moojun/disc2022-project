@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book 24</title>
+  <link rel="stylesheet" href="css/contact-us.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+</head>
+<body>
+  <div id="container">    
+    <header>
+      <div id="logo">
+        <a href="#">
+          <h1>Book 24</h1>
+        </a>
+      </div>
+      <nav>
+          <a href="mainPage.html">메인 화면으로</a>
+      </nav>
+    </header>
+
+    <section id="contact-us">
+      <div class="section-container">
+        <div>
+          <h2 class="section-heading text-uppercase">Contact us</h2>
+        </div>
+        <div id="contact-us-section">
+          <article>
+            <p>연락을 원하시면 아래 위치로 방문하시거나, 저에게 이메일을 보내주세요</p>
+            <div id="map"><br>&nbsp;지도가 표시될 영역</div>
+          </article>
+          <aside>
+            <form action="">
+              <fieldset>
+                <legend>Send us E-mail</legend>
+                <div class="form-group">
+                  <label for="name">Name</label>	
+                  <input type="text" id="name" name="name" placeholder="Your Name *">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" name="phone" placeholder="Your Phone *">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email *">
+                </div>
+                <div class="form-group">
+                  <label for="msg">Message</label>
+                  <textarea name="msg" id="msg" cols="30" rows="8"
+                  placeholder="Your Message *"></textarea>
+                </div>
+                <div class="form-group">
+                  <button>SEND</button>
+                </div>
+              </fieldset>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-media">
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.github.com/Moojun" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+      </ul>
+      <p class="copyright">copyright (c) mjkim@seoultech.ac.kr</p><br><br>
+    </footer> 
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA79F3HwKaIZZGfFmXbW6esaI6fqbxti0I	&callback=initMap"
+    async defer></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
