@@ -6,6 +6,7 @@
     <title>Book 24</title>
     <link href="css/login.css"" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script src="js/login.js"></script>
   </head>
   <body>
     <div class="login-logo">
@@ -13,23 +14,34 @@
     </div>
     <div class="login-text">
       <ul>
-        <li>현재 로그인 기능이 원활하지 않습니다. "게스트 입장" 버튼을 클릭하여 사이트에 접속하세요!</li>
+        <!-- <li>현재 로그인 기능이 원활하지 않습니다. "게스트 입장" 버튼을 클릭하여 사이트에 접속하세요!</li> -->
+        <li>아이디와 비밀번호를 입력 후 '가입하기' 를 눌러주세요!</li>
       </ul>
     </div>
  
     <div class="login-form">
-      <form>
+      <form name="form1">
         <input type="text" name="id" class="text-field" placeholder="아이디">
         <input type="password" name="password" class="text-field" placeholder="비밀번호">
-        <input type="submit" value="로그인" class="submit-btn">
+        <!-- <input type="submit" value="로그인" class="submit-btn"> -->
+        <button type="button" class="submit-btn" onClick="signup()" >가입하기</button>
         
-        <button type="button" class="guest-btn" onclick="location.href='mainPage.html'">게스트 입장</button>
+        <!-- <button type="button" class="guest-btn" onclick="location.href='mainPage.html'">게스트 입장</button> -->
       </form>
-   
-      <div class="links">
-        <a href="#">비밀번호를 잊어버리셨나요?</a>
-      </div>
+    <div class="links">
+      <a href="#">비밀번호를 잊어버리셨나요?</a>
     </div>
-
+    </div>
+    <div class="result">
+      <h2>가입을 환영합니다!</h2>
+      <h3>가입 정보</h3>
+      <hr>
+      <p>아이디: <span id="result-id"></span><br></p>
+      <button type="button" class="result-btn" onclick="location.href='mainPage.html'">입장하기</button>
+    </div>
+    <script>
+      document.querySelector(".result").style.display = "none";
+      console.log("index.html");
+    </script>
   </body>
 </html>
