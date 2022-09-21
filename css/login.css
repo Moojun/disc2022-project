@@ -36,6 +36,10 @@ body {
   font-size: 60px;
   color: rgb(17, 4, 4);
 }
+.login-logo h1 {
+  font-size: 40px;
+  margin-top: 10px;
+}
 
 .login-text {
   text-align: center;
