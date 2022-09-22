@@ -26,6 +26,9 @@ function login() {
   else if (state == false) {
     return;
   }
+  else if (Cookies.get('id') == undefined || Cookies.get('password') == undefined) {
+    alert("먼저 회원가입을 해 주세요.");
+  }
   else if(idText == "" && pwText == "") {
     alert("아이디와 비밀번호를 정확하게 입력해주세요.");
   }
