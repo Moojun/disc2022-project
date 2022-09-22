@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book 24</title>
+  <link rel="stylesheet" href="../css/mypage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+  <script src="../js/mypage.js"></script>
+</head>
+<body>
+  <div id="container">    
+    <header>
+      <div id="logo">
+        <a href="#">
+          <h1>Book 24</h1>
+        </a>
+      </div>
+      <nav>
+          <a href="../mainPage.html">메인 화면으로</a>
+      </nav>
+    </header>
+
+    <section class="mypage-section">
+      <div class="section-container">
+        <div>
+          <h2 class="section-heading text-uppercase">마이페이지</h2>
+        </div>
+        <script>
+          let savedId = Cookies.get('id');
+          if (savedId == undefined) {
+            savedId = "<b>가입된 아이디 정보가 없습니다.</b>"
+          }
+          let savedEmail = Cookies.get('email');
+          if (savedEmail == undefined) {
+            savedEmail = "<b>가입된 이메일 정보가 없습니다.</b>"
+          }
+          document.write("아이디: " + savedId);
+          document.write("<br>");
+          document.write("이메일 주소: " + savedEmail);
+          document.write("<br>");
+          document.write("lala: " + Cookies.get());
+          console.log(Cookies.get());
+        </script>
+        <div>
+          <button type="button" class="w-btn-outline w-btn-brown-outline" onclick="cookieReset()">가입 내역 초기화 및 가입 화면으로 이동</button>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-media">
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.github.com/Moojun" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+      </ul>
+      <p class="copyright">copyright (c) mjkim@seoultech.ac.kr</p><br><br>
+    </footer> 
+  </body>
+</html>
