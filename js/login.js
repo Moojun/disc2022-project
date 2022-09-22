@@ -26,14 +26,15 @@ function login() {
   else if (state == false) {
     return;
   }
+  else if(idText == "" && pwText == "") {
+    alert("아이디와 비밀번호를 정확하게 입력해주세요.");
+  }
   else if (idText != Cookies.get('id')){
     alert("가입한 아이디와 일치하지 않습니다.");
   }
   else if (pwText != Cookies.get('password')){
     alert("가입한 비밀번호와 일치하지 않습니다.");
   }
-
-
 }
 
     
