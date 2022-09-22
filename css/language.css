@@ -225,6 +225,27 @@ nav a {
   font-weight: bold; 
 }
 
+.img-buyButton {
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 0;
+  color: rgb(178, 135, 111);
+  margin-top:2rem;
+  font-weight: bold;
+  font-size: 0.678rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background-position: 1% 50%;
+  background-size: 400% 300%;
+  border: 1px solid #b2876f;
+  opacity: 0.6;
+}
+.img-buyButton:hover {
+  cursor: pointer;
+  opacity: 1;
+  font-size: 0.8rem;
+}
+
 /*   section: lightbox   */
 
 #lightbox {

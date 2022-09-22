@@ -37,3 +37,50 @@ function change_img(val){
   }
   lightboxContents[val - 1].style.display = '';
 }	
+
+
+// 장바구니 담기: Cookie 사용
+let pageTitle = document.querySelector('.section-heading').innerHTML;
+if (pageTitle == "C 언어 도서 목록") {
+  console.log("here is C");
+  let imgList = document.querySelectorAll('.section-h4');
+  let buyButtonList = document.querySelectorAll('.img-buyButton');
+
+  for (let i = 0; i < buyButtonList.length; i++) {
+    buyButtonList[i].addEventListener('click', function(e) {
+      alert(imgList[i].innerHTML + " 도서가 장바구니에 담겼습니다!");
+
+      // C언어는 0부터 3
+      Cookies.set(("book" + i), imgList[i].innerHTML);
+    });
+  }
+}
+else if (pageTitle == "Java 도서 목록") {
+  console.log("here is Java");
+  let imgList = document.querySelectorAll('.section-h4');
+  let buyButtonList = document.querySelectorAll('.img-buyButton');
+
+  for (let i = 0; i < buyButtonList.length; i++) {
+    buyButtonList[i].addEventListener('click', function(e) {
+      alert(imgList[i].innerHTML + " 도서가 장바구니에 담겼습니다!");
+      
+      // Java는 4부터 7을 저장
+      Cookies.set(("book" + (i + 4)), imgList[i].innerHTML);
+    });
+  }
+}
+else {
+  console.log("here is Python");
+  let imgList = document.querySelectorAll('.section-h4');
+  let buyButtonList = document.querySelectorAll('.img-buyButton');
+
+  for (let i = 0; i < buyButtonList.length; i++) {
+    buyButtonList[i].addEventListener('click', function(e) {
+      alert(imgList[i].innerHTML + " 도서가 장바구니에 담겼습니다!");
+
+       // Python은 8부터 10
+      Cookies.set(("book" + (i + 8)), imgList[i].innerHTML);
+    });
+  }
+}
+
