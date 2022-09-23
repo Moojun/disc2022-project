@@ -2,6 +2,7 @@
 
 * 참가분야: 웹사이트
 * Chrome 환경에서 사용을 권장합니다. (Safari의 경우 한글 글꼴 적용이 원활하게 되지 않음)
+* GitHub Pages 기능을 사용하여, https://Moojun.github.io/disc2022-project/ 링크로 접속 가능
 
 <br>
 
